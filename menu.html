@@ -128,21 +128,11 @@
                                       <img src="images/cake 3.png" alt="cake" class="img-fluid rounded mb-3">
                                       <p>Delicious vanilla buttercream layered with silky chocolate ganache and topped with assorted premium chocolates</p>
                                        <p class="price">₦25,000</p>
-                                    <div class="mb-3">
-                                        <label class="form-label">Choose a size</label>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size6">
-                                            <label for="size6" class="form-check-label">size 6</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size8">
-                                            <label for="size8" class="form-check-label">size 8</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size12">
-                                            <label for="size12" class="form-check-label">size 12</label>
-                                        </div>
-                                    </div>
+                                         <select class="size size mb-3" id="size">
+                                            <option value="25000">size 6</option>
+                                            <option value="35000">size 7</option>
+                                            <option value="50000">size 8</option>
+                                         </select>
                                     <select class="form-select form-select-sm mb-3">
                                         <option>Choose a flavour</option>
                                         <option>Chocolate</option>
@@ -150,13 +140,13 @@
                                           <option>Red velvet</option>
                                     </select>
                                     <textarea class="form-control" rows="3" placeholder="Write any special instructions..."></textarea>
-                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart</a>
+                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart  <i class="bi bi-cart3 fs-4"></i></a>
                                   </div>
                                </div>
                             </div>
                         </div>
                         
-                        <a href="" class="btn px-5 add-cart">Add to cart</a>
+                        <a href="" class="btn px-5 add-cart">Add to cart  <i class="bi bi-cart3 fs-4"></i></a>
                      </div>
                  </div>
 
@@ -187,30 +177,19 @@
                                       <img src="images/vanilla cupcake.png" alt="cake" class="img-fluid rounded mb-3">
                                       <p>Light and moist vanilla cupcakes topped with smooth, creamy buttercream frosting and colorful sprinkles. A delightful treat that's perfect for birthdays, parties, and everyday celebrations.</p>
                                        <p class="price">₦10,000</p>
-                                    <div class="mb-3">
-                                        <label class="form-label">Choose a size</label>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size6">
-                                            <label for="size6" class="form-check-label">size 6</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size8">
-                                            <label for="size8" class="form-check-label">size 8</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size12">
-                                            <label for="size12" class="form-check-label">size 12</label>
-                                        </div>
-                                    </div>
-                                   
+                                    <select class="size size-sm mb-3" id="size">
+                                            <option value="10000">by 6</option>
+                                            <option value="15000">by 8</option>
+                                            <option value="20000">by 12</option>
+                                         </select>
                                     <textarea class="form-control" rows="3" placeholder="Write any special instructions..."></textarea>
-                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart</a>
+                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart <i class="bi bi-cart3 fs-4"></i></a>
                                   </div>
                                </div>
                             </div>
                         </div>
                         
-                        <a href="" class="btn px-5 add-cart">Add to cart</a>
+                        <a href="" class="btn px-5 add-cart">Add to cart <i class="bi bi-cart3 fs-4"></i></a>
                      </div>
                  </div>
                  
@@ -220,7 +199,7 @@
                      <img src="images/glazed doughnut.png" alt="pastries" class="card-img-top" >
                      <div class="card-body">
                         <h3 class="card-title text-white">Glazed Doughnut</h3>
-                        <p class="price">₦15,000</p>
+                        <p class="price">₦7,000</p>
                         <!--modal-->
                         <button type="button" 
                                 class="btn" 
@@ -239,22 +218,12 @@
                                   <div class="modal-body">
                                       <img src="images/glazed doughnut.png" alt="pastries" class="img-fluid rounded mb-3">
                                       <p>Soft, fluffy doughnuts coated in rich chocolate and vanilla glaze, finished with chocolate drizzles and crunchy sprinkles. Freshly baked and perfect for breakfast, dessert, or a sweet snack.</p>
-                                       <p class="price">$25,000</p>
-                                    <div class="mb-3">
-                                        <label class="form-label">Choose a size</label>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size6">
-                                            <label for="size6" class="form-check-label">3 by 3</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size8">
-                                            <label for="size8" class="form-check-label">6 by 6 </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size8">
-                                            <label for="size8" class="form-check-label">12 by 12</label>
-                                        </div>
-                                    </div>
+                                       <p class="price">₦7,000</p>
+                                            <select class="size size-sm mb-3" id="size">
+                                            <option value="7000">by 3</option>
+                                            <option value="12000">by 6</option>
+                                            <option value="17000">by 12</option>
+                                         </select>
                                     <select class="form-select form-select-sm mb-3">
                                         <option>Choose a glaze</option>
                                         <option>white Chocolate</option>
@@ -262,13 +231,13 @@
                                           
                                     </select>
                                     <textarea class="form-control" rows="3" placeholder="Write any special instructions..."></textarea>
-                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart</a>
+                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart<i class="bi bi-cart3 fs-4"></i></a>
                                   </div>
                                </div>
                             </div>
                         </div>
                         
-                        <a href="" class="btn px-5 add-cart">Add to cart</a>
+                        <a href="" class="btn px-5 add-cart">Add to cart<i class="bi bi-cart3 fs-4"></i></a>
                      </div>
                  </div>
                  
@@ -300,13 +269,13 @@
                                        <p class="price">₦7,000</p>
                                     
                                     <textarea class="form-control" rows="3" placeholder="Write any special instructions..."></textarea>
-                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart</a>
+                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart<i class="bi bi-cart3 fs-4"></i></a>
                                   </div>
                                </div>
                             </div>
                         </div>
                         
-                        <a href="" class="btn px-5 add-cart">Add to cart</a>
+                        <a href="" class="btn px-5 add-cart">Add to cart<i class="bi bi-cart3 fs-4"></i></a>
                      </div>
                  </div>
                  
@@ -336,21 +305,6 @@
                                       <img src="images/Chocolate Almond Cookies.jpeg" alt="cake" class="img-fluid rounded mb-3">
                                       <p>Freshly baked golden cookies coated with crunchy almonds and rich dark chocolate for the perfect sweet bite.</p>
                                        <p class="price">₦2,500</p>
-                                    <div class="mb-3">
-                                        <label class="form-label">Choose a size</label>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size6">
-                                            <label for="size6" class="form-check-label">size 6</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size8">
-                                            <label for="size8" class="form-check-label">size 8</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size12">
-                                            <label for="size12" class="form-check-label">size 12</label>
-                                        </div>
-                                    </div>
                                     <select class="form-select form-select-sm mb-3">
                                         <option>Choose a flavour</option>
                                         <option>Chocolate</option>
@@ -358,13 +312,13 @@
                                           <option>Red velvet</option>
                                     </select>
                                     <textarea class="form-control" rows="3" placeholder="Write any special instructions..."></textarea>
-                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart</a>
+                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart<i class="bi bi-cart3 fs-4"></i></a>
                                   </div>
                                </div>
                             </div>
                         </div>
                         
-                        <a href="" class="btn px-5 add-cart">Add to cart</a>
+                        <a href="" class="btn px-5 add-cart">Add to cart<i class="bi bi-cart3 fs-4"></i></a>
                      </div>
                  </div>
                  
@@ -374,7 +328,7 @@
                      <img src="images/Filled doughnuts.jpeg" alt="pastries" class="card-img-top" >
                      <div class="card-body">
                         <h3 class="card-title text-white">Filled Doughnuts</h3>
-                        <p class="price">₦10,000</p>
+                        <p class="price">₦5,000</p>
                         <!--modal-->
                         <button type="button" 
                                 class="btn" 
@@ -393,22 +347,13 @@
                                   <div class="modal-body">
                                       <img src="images/Filled doughnuts.jpeg" alt="pastries" class="img-fluid rounded mb-3">
                                       <p>Soft, fluffy doughnuts coated in fine sugar and generously filled with smooth vanilla cream for a sweet, indulgent treat.</p>
-                                       <p class="price">₦10,000</p>
-                                    <div class="mb-3">
-                                        <label class="form-label">Choose a size</label>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size6">
-                                            <label for="size6" class="form-check-label">by3</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size8">
-                                            <label for="size8" class="form-check-label">by6</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size12">
-                                            <label for="size12" class="form-check-label">by12</label>
-                                        </div>
-                                    </div>
+                                       <p class="price">₦5,000</p>
+                                         <select class="size size-sm mb-3" id="size">
+                                            <option value="5000">by 3</option>
+                                            <option value="8000">by 6</option>
+                                            <option value="12000">by 12</option>
+                                         </select>
+                                    
                                     <select class="form-select form-select-sm mb-3">
                                         <option>Choose a filling</option>
                                         <option>Chocolate</option>
@@ -416,13 +361,13 @@
                                           <option>jam</option>
                                     </select>
                                     <textarea class="form-control" rows="3" placeholder="Write any special instructions..."></textarea>
-                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart</a>
+                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart <i class="bi bi-cart3 fs-4"></i></a>
                                   </div>
                                </div>
                             </div>
                         </div>
                         
-                        <a href="" class="btn px-5 add-cart">Add to cart</a>
+                        <a href="" class="btn px-5 add-cart">Add to cart <i class="bi bi-cart3 fs-4"></i></a>
                      </div>
                  </div>
                  
@@ -432,7 +377,7 @@
                      <img src="images/Ring diughnuts.jpeg" alt="pastries" class="card-img-top" >
                      <div class="card-body">
                         <h3 class="card-title text-white">Ring Doughnuts</h3>
-                        <p class="price">₦8,000</p>
+                        <p class="price">₦4,000</p>
                         <!--modal-->
                         <button type="button" 
                                 class="btn" 
@@ -451,30 +396,20 @@
                                   <div class="modal-body">
                                       <img src="images/Ring diughnuts.jpeg" alt="pastries" class="img-fluid rounded mb-3">
                                       <p></p>
-                                       <p class="price">₦8,000</p>
-                                    <div class="mb-3">
-                                        <label class="form-label">Choose a size</label>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size6">
-                                            <label for="size6" class="form-check-label">by 3</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size8">
-                                            <label for="size8" class="form-check-label">by 6</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size12">
-                                            <label for="size12" class="form-check-label">by 12</label>
-                                        </div>
-                                    </div>
+                                       <p class="price">₦4,000</p>
+                                         <select class="size size-sm mb-3" id="size">
+                                            <option value="4000">by 3</option>
+                                            <option value="6500">by 6</option>
+                                            <option value="10000">by 12</option>
+                                         </select>
                                     <textarea class="form-control" rows="3" placeholder="Write any special instructions..."></textarea>
-                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart</a>
+                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart <i class="bi bi-cart3 fs-4"></i></a>
                                   </div>
                                </div>
                             </div>
                         </div>
                         
-                        <a href="" class="btn px-5 add-cart">Add to cart</a>
+                        <a href="" class="btn px-5 add-cart">Add to cart <i class="bi bi-cart3 fs-4"></i></a>
                      </div>
                  </div>
                  
@@ -484,7 +419,7 @@
                      <img src="images/Vanilla Gold Drip cake.jpeg" alt="cake" class="card-img-top" >
                      <div class="card-body">
                         <h3 class="card-title text-white">Vanilla Gold Drip Cake</h3>
-                        <p class="price">₦35,000</p>
+                        <p class="price">₦27,000</p>
                         <!--modal-->
                         <button type="button" 
                                 class="btn" 
@@ -503,22 +438,12 @@
                                   <div class="modal-body">
                                       <img src="images/Vanilla Gold Drip cake.jpeg" alt="cake" class="img-fluid rounded mb-3">
                                       <p>A rich vanilla sponge cake layered with creamy buttercream and finished with an elegant gold drip and delicate buttercream swirls.</p>
-                                       <p class="price">₦35,000</p>
-                                    <div class="mb-3">
-                                        <label class="form-label">Choose a size</label>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size6">
-                                            <label for="size6" class="form-check-label">size 6</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size8">
-                                            <label for="size8" class="form-check-label">size 8</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size12">
-                                            <label for="size12" class="form-check-label">size 12</label>
-                                        </div>
-                                    </div>
+                                       <p class="price">₦27,000</p>
+                                      <select class="size size mb-3" id="size">
+                                            <option value="27000">size 6</option>
+                                            <option value="35000">size 7</option>
+                                            <option value="45000">size 8</option>
+                                         </select>
                                     <select class="form-select form-select-sm mb-3">
                                         <option>Choose a flavour</option>
                                         <option>Chocolate</option>
@@ -526,13 +451,13 @@
                                           <option>Red velvet</option>
                                     </select>
                                     <textarea class="form-control" rows="3" placeholder="Write any special instructions..."></textarea>
-                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart</a>
+                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart <i class="bi bi-cart3 fs-4"></i></a>
                                   </div>
                                </div>
                             </div>
                         </div>
                         
-                        <a href="" class="btn px-5 add-cart">Add to cart</a>
+                        <a href="" class="btn px-5 add-cart">Add to cart <i class="bi bi-cart3 fs-4"></i></a>
                      </div>
                  </div>
                  
@@ -562,21 +487,11 @@
                                       <img src="images/Red velvet cake.jpeg" alt="cupcake" class="img-fluid rounded mb-3">
                                       <p>Moist red velvet cupcake topped with silky pink buttercream, festive sprinkles, and a heart decoration—perfect for celebrations or gifting.</p>
                                        <p class="price">₦10,000</p>
-                                    <div class="mb-3">
-                                        <label class="form-label">Choose a size</label>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size6">
-                                            <label for="size6" class="form-check-label">by 3</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size8">
-                                            <label for="size8" class="form-check-label">by 6</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size12">
-                                            <label for="size12" class="form-check-label">by 12</label>
-                                        </div>
-                                    </div>
+                                        <select class="size size-sm mb-3" id="size">
+                                            <option value="10000">by 6</option>
+                                            <option value="15000">by 8</option>
+                                            <option value="20000">by 12</option>
+                                         </select>
                                     <select class="form-select form-select-sm mb-3">
                                         <option>Choose a flavour</option>
                                         <option>Chocolate</option>
@@ -584,13 +499,13 @@
                                           <option>Red velvet</option>
                                     </select>
                                     <textarea class="form-control" rows="3" placeholder="Write any special instructions..."></textarea>
-                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart</a>
+                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart<i class="bi bi-cart3 fs-4"></i></a>
                                   </div>
                                </div>
                             </div>
                         </div>
                         
-                        <a href="" class="btn px-5 add-cart">Add to cart</a>
+                        <a href="" class="btn px-5 add-cart">Add to cart<i class="bi bi-cart3 fs-4"></i></a>
                      </div>
                  </div>
                  
@@ -601,7 +516,7 @@
                      <img src="images/chocolate pain au chocolat.jpeg" alt="pastries" class="card-img-top" >
                      <div class="card-body">
                         <h3 class="card-title text-white">Chocolate Pain au Chocolat</h3>
-                        <p class="price">₦15,000</p>
+                        <p class="price">₦10,000</p>
                         <!--modal-->
                         <button type="button" 
                                 class="btn" 
@@ -620,30 +535,15 @@
                                   <div class="modal-body">
                                       <img src="images/chocolate pain au chocolat.jpeg" alt="pastries" class="img-fluid rounded mb-3">
                                       <p>Buttery, flaky puff pastry wrapped around rich chocolate filling and lightly dusted with powdered sugar for a delightful breakfast or snack.</p>
-                                       <p class="price">₦15,000</p>
-                                    <div class="mb-3">
-                                        <label class="form-label">Choose a size</label>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size6">
-                                            <label for="size6" class="form-check-label">by 3</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size8">
-                                            <label for="size8" class="form-check-label">by 6</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size12">
-                                            <label for="size12" class="form-check-label"> by 12</label>
-                                        </div>
-                                    </div>
+                                       <p class="price">₦10,000</p>
                                     <textarea class="form-control" rows="3" placeholder="Write any special instructions..."></textarea>
-                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart</a>
+                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart <i class="bi bi-cart3 fs-4"></i></a>
                                   </div>
                                </div>
                             </div>
                         </div>
                         
-                        <a href="" class="btn px-5 add-cart">Add to cart</a>
+                        <a href="" class="btn px-5 add-cart">Add to cart <i class="bi bi-cart3 fs-4"></i></a>
                      </div>
                  </div>
                  
@@ -695,13 +595,13 @@
                                           <option>Red velvet</option>
                                     </select>
                                     <textarea class="form-control" rows="3" placeholder="Write any special instructions..."></textarea>
-                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart</a>
+                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart <i class="bi bi-cart3 fs-4"></i></a>
                                   </div>
                                </div>
                             </div>
                         </div>
                         
-                        <a href="" class="btn px-5 add-cart">Add to cart</a>
+                        <a href="" class="btn px-5 add-cart">Add to cart <i class="bi bi-cart3 fs-4"></i></a>
                      </div>
                  </div>
                  
@@ -731,29 +631,14 @@
                                       <img src="images/Peanut butter cookies.jpeg" alt="cookies" class="img-fluid rounded mb-3">
                                       <p>Soft, chewy cookies loaded with chocolate chips and peanut butter cups in every bite.</p>
                                        <p class="price">₦5,000</p>
-                                    <div class="mb-3">
-                                        <label class="form-label">Choose a size</label>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size6">
-                                            <label for="size6" class="form-check-label">by 3</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size8">
-                                            <label for="size8" class="form-check-label"> by 6</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size12">
-                                            <label for="size12" class="form-check-label">by 12</label>
-                                        </div>
-                                    </div>
                                     <textarea class="form-control" rows="3" placeholder="Write any special instructions..."></textarea>
-                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart</a>
+                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart<i class="bi bi-cart3 fs-4"></i></a>
                                   </div>
                                </div>
                             </div>
                         </div>
                         
-                        <a href="" class="btn px-5 add-cart">Add to cart</a>
+                        <a href="" class="btn px-5 add-cart">Add to cart<i class="bi bi-cart3 fs-4"></i></a>
                      </div>
                  </div>
                  
@@ -771,7 +656,7 @@
                                 data-bs-toggle="modal" 
                                 data-bs-target="#rose-cake">
                             View details
-                        </button>
+                        </button> <br>
                         <!--modal content-->
                         <div class="modal fade" id="rose-cake">
                             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -784,21 +669,11 @@
                                       <img src="images/Elegant Rose Cake.jpeg" alt="cake" class="img-fluid rounded mb-3">
                                       <p>A beautiful two-tier vanilla cake decorated with handcrafted red roses, ideal for weddings and celebrations.</p>
                                        <p class="price">₦55,000</p>
-                                    <div class="mb-3">
-                                        <label class="form-label">Choose a size</label>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size6">
-                                            <label for="size6" class="form-check-label">size 6</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size8">
-                                            <label for="size8" class="form-check-label">size 8</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size12">
-                                            <label for="size12" class="form-check-label">size 12</label>
-                                        </div>
-                                    </div>
+                                    <select class="size size mb-3" id="size">
+                                            <option value="25000">size 6</option>
+                                            <option value="35000">size 7</option>
+                                            <option value="50000">size 8</option>
+                                         </select>
                                     <select class="form-select form-select-sm mb-3">
                                         <option>Choose a flavour</option>
                                         <option>Chocolate</option>
@@ -806,13 +681,13 @@
                                           <option>Red velvet</option>
                                     </select>
                                     <textarea class="form-control" rows="3" placeholder="Write any special instructions..."></textarea>
-                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart</a>
+                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart <i class="bi bi-cart3 fs-4"></i></a>
                                   </div>
                                </div>
                             </div>
                         </div>
                         
-                        <a href="" class="btn px-5 add-cart">Add to cart</a>
+                        <a href="" class="btn px-5 add-cart">Add to cart <i class="bi bi-cart3 fs-4"></i></a>
                      </div>
                  </div>
                  
@@ -822,7 +697,7 @@
                      <img src="images/Strawberry chocolate cake.jpeg" alt="cake" class="card-img-top" >
                      <div class="card-body">
                         <h3 class="card-title text-white">Strawberry chocolate Cake</h3>
-                        <p class="price">₦50,000</p>
+                        <p class="price">₦30,000</p>
                         <!--modal-->
                         <button type="button" 
                                 class="btn" 
@@ -841,22 +716,12 @@
                                   <div class="modal-body">
                                       <img src="images/Strawberry chocolate cake.jpeg" alt="cake" class="img-fluid rounded mb-3">
                                       <p>Moist chocolate sponge layered with fresh strawberries and creamy strawberry frosting.</p>
-                                       <p class="price">₦50,000</p>
-                                    <div class="mb-3">
-                                        <label class="form-label">Choose a size</label>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size6">
-                                            <label for="size6" class="form-check-label">size 6</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size8">
-                                            <label for="size8" class="form-check-label">size 8</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size12">
-                                            <label for="size12" class="form-check-label">size 12</label>
-                                        </div>
-                                    </div>
+                                       <p class="price">₦30,000</p>
+                                         <select class="size size mb-3" id="size">
+                                            <option value="30000">size 6</option>
+                                            <option value="45000">size 7</option>
+                                            <option value="55000">size 8</option>
+                                         </select>
                                     <select class="form-select form-select-sm mb-3">
                                         <option>Choose a flavour</option>
                                         <option>Chocolate</option>
@@ -864,13 +729,13 @@
                                           <option>Red velvet</option>
                                     </select>
                                     <textarea class="form-control" rows="3" placeholder="Write any special instructions..."></textarea>
-                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart</a>
+                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart <i class="bi bi-cart3 fs-4"></i></a>
                                   </div>
                                </div>
                             </div>
                         </div>
                         
-                        <a href="" class="btn px-5 add-cart">Add to cart</a>
+                        <a href="" class="btn px-5 add-cart">Add to cart <i class="bi bi-cart3 fs-4"></i></a>
                      </div>
                  </div>
                  
@@ -900,31 +765,17 @@
                                   <div class="modal-body">
                                       <img src="images/Classic cinnamon rolls (1).jpeg" alt="pastries" class="img-fluid rounded mb-3">
                                       <p>Soft, fluffy cinnamon rolls generously topped with smooth vanilla cream cheese icing.</p>
-                                       <p class="price">₦5,000</p>
-                                    <div class="mb-3">
-                                        <label class="form-label">Choose a size</label>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size6">
-                                            <label for="size6" class="form-check-label">6 by 6</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size8">
-                                            <label for="size8" class="form-check-label">8 by 8</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="radio" class="form-check-input" name="size" id="size12">
-                                            <label for="size12" class="form-check-label">12 by 12</label>
-                                        </div>
-                                    </div>
+                                       <p class="price">₦10,000</p>
+                             
                         
                                     <textarea class="form-control" rows="3" placeholder="Write any special instructions..."></textarea>
-                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart</a>
+                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart <i class="bi bi-cart3 fs-4"></i></a>
                                   </div>
                                </div>
                             </div>
                         </div>
                         
-                        <a href="" class="btn px-5 add-cart">Add to cart</a>
+                        <a href="" class="btn px-5 add-cart">Add to cart <i class="bi bi-cart3 fs-4"></i></a>
                      </div>
                  </div>
                  
@@ -955,13 +806,13 @@
                                       <p>Rich, velvety hot chocolate topped with whipped cream and a dusting of cocoa powder.</p>
                                        <p class="price">₦5,000</p>
                                     <textarea class="form-control" rows="3" placeholder="Write any special instructions..."></textarea>
-                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart</a>
+                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart <i class="bi bi-cart3 fs-4"></i></a>
                                   </div>
                                </div>
                             </div>
                         </div>
                         
-                        <a href="" class="btn px-5 add-cart">Add to cart</a>
+                        <a href="" class="btn px-5 add-cart">Add to cart <i class="bi bi-cart3 fs-4"></i></a>
                      </div>
                  </div>
                  
@@ -995,13 +846,13 @@
                                     
                                     
                                     <textarea class="form-control" rows="3" placeholder="Write any special instructions..."></textarea>
-                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart</a>
+                                     <a href="" class="btn px-5 mt-2 add-cart">Add to cart <i class="bi bi-cart3 fs-4"></i></a>
                                   </div>
                                </div>
                             </div>
                         </div>
                         
-                        <a href="" class="btn px-5 add-cart">Add to cart</a>
+                        <a href="" class="btn px-5 add-cart">Add to cart <i class="bi bi-cart3 fs-4"></i></a>
                      </div>
                  </div>
                  
@@ -1032,14 +883,14 @@
                                       <p>A refreshing mango dessert layered with creamy whipped topping and juicy mango chunks.</p>
                                        <p class="price">₦5,000</p>
                                       <textarea class="form-control" rows="3" placeholder="Write any special instructions..."></textarea>
-                                     <a href="#cart" class="btn px-5 mt-2 add-cart">Add to cart</a>
+                                     <a href="#cart" class="btn px-5 mt-2 add-cart">Add to cart <i class="bi bi-cart3 fs-4"></i></a>
                                   
                                   
                                </div>
                             </div>
                         </div>
                      </div>
-                      <a href="#cart" class="btn px-5 add-cart">Add to cart</a>
+                      <a href="#cart" class="btn px-5 add-cart">Add to cart <i class="bi bi-cart3 fs-4"></i></a>
                  </div>
                  </div>
             </div>

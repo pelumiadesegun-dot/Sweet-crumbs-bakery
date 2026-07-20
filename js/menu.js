@@ -32,33 +32,59 @@ searchbtn.addEventListener("click", event =>{
 
 });
 
+ const sizeSelectors = document.querySelectorAll(".size");
 
+ sizeSelectors.forEach(size =>{
+    size.addEventListener("change", event =>{
+         const modalBody = event.target.closest(".modal-body");
+         const newPrice = Number(event.target.value) ;
+         const price = modalBody.querySelector(".price");
+         price.textContent ="₦" + Number(event.target.value).toLocaleString();
+         if(currentCartBox){
+            const cartPrice = currentCartBox.querySelector(".cart-price");
+             cartPrice.textContent = "₦" + newPrice.toLocaleString();
 
+            updateTotalPrice();
+         }
+    });
+ });
+
+        
 const offcanvasBody = document.querySelector(".offcanvas-body");
 const addCartButtons = document.querySelectorAll(".add-cart");
 const total = document.querySelector(".total");
-
+  let currentCartBox = null;
 
 addCartButtons.forEach( button =>{
   button.addEventListener("click",event =>{
         event.preventDefault();
    const productCard = event.target.closest(".product-card");
+   const modalBody = event.target.closest(".modal-body");
+   addToCart(productCard,modalBody);
+
+});
+});
   
-   addToCart(productCard);
 
-});
-});
-
-const addToCart = productCard =>{
+const addToCart = (productCard, modalBody) =>{
     const productImgSrc = productCard.querySelector("img").src;
     const productTitle = productCard.querySelector(".card-title").textContent;
-    const productPrice =Number(
-    productCard
+    let productPrice;
+       if(modalBody){
+        productPrice = Number(modalBody
+                              .querySelector(".price")
+                              .textContent
+                              .replace(/[^0-9.]/g, ""));
+    }
+    else{
+        productPrice = Number(  productCard
         .querySelector(".price")
         .textContent
-        .replace(/[^0-9.]/g, "")
-);
-   
+        .replace(/[^0-9.]/g, ""))
+    }
+    
+   const ViewDetails = productCard.querySelector("[data-bs-toggle='modal']");
+   ViewDetails.forEach
     const modalTarget = productCard.querySelector("[data-bs-toggle='modal']").dataset.bsTarget;
 
     const cartItems = document.querySelectorAll(".cart-title");
@@ -92,7 +118,11 @@ const addToCart = productCard =>{
                         </div>
               </div>
       `;
-      offcanvasBody.insertBefore(cartBox,total);
+       offcanvasBody.insertBefore(cartBox,total);
+       const viewDetailsBtn = cartBox.querySelector(".cart-btn");
+        viewDetailsBtn.addEventListener("click", ()=>{
+               currentCartBox = cartBox;
+        });
 
    const removeBtn= cartBox.querySelector(".cart-remove");
       removeBtn.addEventListener("click" ,event =>{
@@ -100,7 +130,6 @@ const addToCart = productCard =>{
          updateTotalPrice();
          cartCountUpdate();
       });
-    
       const increaseBtn = cartBox.querySelector(".increment");
       const decreaseBtn = cartBox.querySelector(".decrement");
       const number = cartBox.querySelector(".number");
@@ -124,6 +153,12 @@ const addToCart = productCard =>{
       updateTotalPrice();
       cartCountUpdate();
 
+      const modalElement = document.querySelector(modalTarget);
+      const modal = bootstrap.Modal.getInstance(modalElement);
+      if(modal){
+        modal.hide();
+      }
+
 };
 
 const updateTotalPrice = () =>{
@@ -138,8 +173,8 @@ const updateTotalPrice = () =>{
         const quantity = Number( quantityElement.textContent);
         total += price* quantity;
     });
-    totalPriceElement.textContent=`₦${total}`
-
+    totalPriceElement.textContent=`₦${total.toLocaleString()}`;
+    
 }
 const cartCounts = document.querySelectorAll(".cart-count");
 
@@ -153,6 +188,7 @@ cartCounts.forEach(count =>{
     count.textContent=totalQuantity;
 });
 }
+
 
 const buyNowButton = document.querySelector(".btn-buy");
 
@@ -169,6 +205,5 @@ cartCountUpdate();
 updateTotalPrice();
 alert("Thank you for purchasing");
 });
-
-
+ 
 
